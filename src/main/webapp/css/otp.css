@@ -1,0 +1,79 @@
+@charset "ISO-8859-1";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+	min-height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form{
+	height: 250px;
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+ 	box-shadow:0px 0px 10px rgb(114, 114, 114);
+}
+form .form-header{
+	flex-basis: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form .form-header h3{
+	color: blue;
+}
+form .form-body{
+	flex-basis: 45%;
+	width: 70%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+form .form-body label{
+	align-self: flex-start;
+	font-size: 18px;
+	font-weight: 600;
+	color: orangered;
+}
+form .form-body input{
+	align-self: flex-start;
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 14px;
+	font-weight: 600;
+	border:2px solid black;
+	outline-color: blue;
+}
+form .form-footer{
+	width: 70%;
+	flex-basis: 30%;
+	display: flex;
+	justify-content:center;
+	align-items: flex-start;
+}
+form .form-footer button{
+	align-self: center;
+	width: 45%;
+	height: 60%;
+	background-color: orangered;
+	color: #fff;
+	border: 2px solid orangered;
+	outline: none;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	border-radius: 10px;
+	transition: background-color 0.5s;
+}
+form .form-footer button:hover{
+	color: orangered;
+	background-color: #fff;
+}
